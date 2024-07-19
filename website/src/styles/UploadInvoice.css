@@ -1,0 +1,68 @@
+/* UploadInvoice.css */
+
+.upload-invoice-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    90deg,
+    rgb(0 0 0 / 90%),
+    rgba(34, 33, 33, 0.35)
+  ),
+  url(../assets/images/upload.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #ffc107;
+}
+
+.content {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-top: -80px;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.file-input-container {
+  display: flex;
+  flex-direction: column; /* Display in a column */
+  align-items: center;
+}
+
+input[type="file"] {
+  margin-bottom: 1rem;
+  border: 2px solid #fff; /* White border */
+  border-radius: 10px; /* Border radius */
+  font-size: 1.8rem;
+  padding: 1.5rem;
+  background-color: transparent; /* Transparent background */
+  color: #fff; /* Text color */
+}
+
+button {
+  background: #ffc107;
+  color: #13131a;
+  padding: 1.5rem 3rem;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: block; /* Display on a new line */
+  margin: 0 auto; /* Center the button */
+}
+
+button:hover {
+  background-color: #13131a;
+  color: #ffc107;
+}

@@ -1,0 +1,261 @@
+/* UserDashboard.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.user-dashboard2 {
+  display: flex;
+  background-color: rgb(11, 10, 10);
+  height: 100vh;
+  position: relative;
+  
+}
+.invoice-image {
+  max-width: 90%;
+  height: 350px;
+  position: relative;
+}
+.sidebar {
+  height: 100vh;
+  width: 350px;
+  background: gold;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: width 0.5s ease-in-out;
+  z-index: 1;
+  /* position: fixed; */
+}
+.sidebar h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  color: #3498db;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  font-size: 45px;
+  position: relative; 
+  z-index: 2;
+  animation: floatUp 1.2s ease-in-out; 
+  
+}
+@keyframes floatUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.sidebar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px; 
+  background-color: #f7f4f4;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 100%, 0 50%);
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  /* margin-bottom: 25px; */
+  padding: 10px;
+  border-radius: 29px;
+  margin-top: 40px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+  
+}
+
+.sidebar-item.active {
+  margin-top: 80px;
+  background-color: rgb(63, 62, 62)!important;
+  color: #fff;
+}
+
+.sidebar-item:hover {
+  background-color: rgb(228, 221, 221);
+}
+
+.sidebar-item .icon {
+  margin-right: 10px;
+  font-size: 35px;
+}
+
+.sidebar-item .label {
+  font-size: 23px;
+}
+/* .welcome-box {
+  background-color: rgb(47, 46, 46);
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
+  height:200px;
+  margin-top:60px;
+  margin-left:60px;
+  width:300px;
+}
+
+.welcome-box p {
+  color: gold;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.welcome-box button {
+  background-color: gold; 
+  color: rgb(13, 13, 13);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 26px;
+  width:150px;
+} */
+
+.userflex p{
+  font-size: 23px;
+  color:white;
+}
+
+.userflex{
+  width: 380px; /* Set the width of the box */
+  height: 100px; /* Set the height of the box */
+  background-color: gold; /* Set the background color */
+  color: #fff; /* Set the text color */
+  padding: 20px; /* Add padding inside the box */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 2px 2px 5px #888888;
+  font-size:25px;
+  margin-top:50px;
+  margin-left:56px;
+  background-color: gold;
+  animation: floatUp 1.3s ease-in-out; 
+}
+.userflex button {
+  border: 3px solid white;
+  /* background-color: black; */
+  margin-left: 237px;
+  margin-top: -38px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userflex img{
+  height:80px;
+  width:80px;
+  margin-left: 280px ;
+  margin-top: -145px; 
+
+}
+.userflex1 {
+  width: 430px;
+  height: 250px;
+  background-color: gold;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px #888888;
+  font-size: 25px;
+  margin-top: 190px;
+  margin-left: -375px;
+  animation: floatUp 1.4s ease-in-out; 
+}
+.userflex1 p{
+  font-size: 30px;
+  font-style: bold;
+  color:rgb(13, 2, 2);
+}
+.userflex1 button {
+  border: 3px solid white;
+  color: black;
+  margin-left: 237px;
+  margin-top: -38px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userflex2 {
+  width: 533px;
+  height: 210px;
+  background-color: gold;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px #888888;
+  font-size: 25px;
+  margin-top: 202px;
+  margin-left: 28px;
+  animation: floatUp 1.5s ease-in-out; 
+}
+.userflex2 p{
+  font-size: 30px;
+  font-style: bold;
+  color:white;
+}
+.userflex2 button{
+  border:3px solid white;
+  /* background-color: black; */
+   color:white;
+  margin-top:-72px;
+  width: 180px;
+  height: 80px;
+}
+.userflex3 button {
+  border: 3px solid white;
+  /* background-color: black; */
+  margin-left: 237px;
+  margin-top: -38px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userflex3 {
+  width: 545px;
+  height: 163px;
+  background-color: gold;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px #888888;
+  font-size: 25px;
+  margin-top: 475px;
+  margin-left: -534px;
+  animation: floatUp 1.6s ease-in-out; 
+}
+
+.userflex4 {
+  width: 434px;
+  height: 175px;
+  background-color: gold;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px #888888;
+  font-size: 25px;
+  margin-top: 475px;
+  margin-left: -1001px;
+  animation: floatUp 1.6s ease-in-out; 
+}
+.userflex4 button {
+  border: 3px solid white;
+  /* background-color: black; */
+  margin-left: 237px;
+  margin-top: -38px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

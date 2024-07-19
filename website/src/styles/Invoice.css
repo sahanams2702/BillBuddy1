@@ -1,0 +1,213 @@
+.Invoicesidebar {
+    height: 150vh;
+    width: 368px;
+    background: gold;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: width 0.5s ease-in-out;
+    z-index: 1;
+    /* position: fixed; */
+  }
+  .Invoicesidebar h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    color: #3498db;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-size: 32px;
+    position: relative; 
+    z-index: 2;
+    animation: floatUp 1.2s ease-in-out; 
+    
+  }
+  @keyframes floatUp {
+    from {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .Invoicesidebar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px; 
+    background-color: #f7f4f4;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 100%, 0 50%);
+  }
+  
+  .Invoicesidebar-item {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 25px; */
+    padding: 10px;
+    border-radius: 29px;
+    margin-top: 40px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+    
+  }
+  
+  .Invoicesidebar-item.active {
+    margin-top: 80px;
+    background-color: rgb(63, 62, 62)!important;
+    color: #fff;
+  }
+  
+  .Invoicesidebar-item:hover {
+    background-color: rgb(228, 221, 221);
+  }
+  
+  .Invoicesidebar-item .icon {
+    margin-right: 10px;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  
+  .Invoicesidebar-item .label {
+    font-size: 23px;
+  }
+  
+  .custom-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 40%;
+    max-height: 80%;
+    background: white;
+    padding: 20px;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: auto;  
+    border-radius: 8px;
+  }
+  .I-avatar::before::before {
+    content: '';
+    position: absolute;
+    top: 45%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 66%;
+    border: 2px solid white;
+}
+  .I-avatar img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px solid gold;
+    margin-left: -29%;
+  }
+  .I1-avatar {
+    position: fixed;
+    top: 6px;
+    right: 20px;
+    z-index: 999; 
+  }
+  
+  .I1-avatar img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px solid gold;
+  }
+  .Invoiceusername {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 18px;
+    padding: 0 20px;
+    font-weight: bold;
+    color: gold;
+    font-size: 23px;
+}
+  .custom-modal-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .close-modal-button {
+    position: absolute;
+    top: 10px;
+    right: 10px ;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #555;
+  }
+  
+  .modal-image {
+    width: 100%;
+    height: auto;
+    margin-left: 0%;
+    margin-top:10px;
+    
+  }
+  
+  .Invoice-dashboard {
+    display: flex;
+    background-color: rgb(11, 10, 10);
+    height: 150vh;
+    position: relative;
+    /* background: inherit; */
+    /* filter: blur(2/px); */
+  }
+ 
+  .modal-open {
+    overflow: hidden; 
+  }
+  
+ 
+  .modal-open::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(8px);
+    z-index: 9999; 
+  }
+  .table{
+    margin-left:32px;
+    margin-right:6px;
+    margin-top:110px;
+  }
+  .table th {
+    color: #0d0c0c;
+    background-color: gold;
+    text-align: center;
+    border: 1px solid black;
+  }
+  .table td{
+    color: #0d0c0c;
+    background-color: gold;
+    text-align: center;
+    border: 1px solid black;
+  }
+  .no-invoice-message{
+    width: 380px; /* Set the width of the box */
+    height: 100px; /* Set the height of the box */
+    background-color: gold; /* Set the background color */
+    color: #fff; /* Set the text color */
+    padding: 20px; /* Add padding inside the box */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 2px 2px 5px #888888;
+    font-size:25px;
+    margin-top:50px;
+    margin-left:56px;
+    background-color: gold;
+    animation: floatUp 1.3s ease-in-out; 
+  }
+ 
